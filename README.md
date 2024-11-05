@@ -3,86 +3,37 @@
 
 ## 1.0. Title
 
-Bike Purchase Analysis using Python
+Excel_Function_Analysis using LookUp Function
 
 ## 2.0 Introduction
 
 ### 2.1. Objectives: 
 
-The aim of the analysis were to:
-
-a) discover the relationship between average income of each gender and their bike purchase history.
-
-b) determine the relationship between distance travelled by cummuters and bike purchase.
-
-c) visualize the relationship between age bracket and bike purchase.
-
+The aim of the analysis were to look-up the different salary compensation schedule for the different grade levels from a salary structure chart.
 
 ### 2.2. Context:
 
-The dataset is made up of data collected by a company that deals on bike. The different fields contain different socio-demographic and bike purchase information of the customers. Which includes: ID,	Marital Status,	Gender,	Income,	Children,	Education,	Occupation,	Home Owner,	Cars,	Commute Distance,	Region,	Age,	Purchased Bike. The dataset contains two datatypes: strings and integers.
+The dataset is made up two datasets: the organizational Database which is the Salary Compensation Schedule as at 1st January 2020 and the Simple Salary Structure. The Database is made up of: seriel number, employee number, employee names, departments, grade level. Other columns like: 
+Basic, housing, transport, meal, leave, utility and gross pay was look-up from the Simple Salary Structure sheet using VLOOKUP function. The Simple Salary Structure chart which represent the simple salary scale per level have columns like: Level, Basic, housing, transport, meal, leave, utility and gross. This sheet served as the look-up array.
 
 ### 2.3. Data Sources
 
-The primary source of data used here is bikedata.xlsx which was gotten as an excel file and it's an open source data which was given as a practice data. The following is the link to the dataset: 
-
-https://docs.google.com/spreadsheets/d/1qzPm4m7N8K8KQcNwRcOZfbIZJ5YC0t0O/edit?usp=drive_link&ouid=106458428464023242528&rtpof=true&sd=true
+The primary source of data used here is Excel_Function 3-LookUp.xlsx which was gotten as an excel file and was supplied by the facilitator.
 
 ## 3.0. Data Understanding
 
 ### 3.1. Data description
-The dataset was gotten in a structured form and contains 1,026 rows and 13 columns. 
+The dataset was gotten in a structured form. The Database sheet has 85 observations and 5 fields while the Simple Salary structure sheet contains 9 observations and 8 fields.
 
 ### 3.2. Exploratory data analysis (EDA)
 
-Python (Google Colab) was implored in cleaning and analyzing the dataset. At the end of the analysis, we were able to:
-
-a) discover the relationship between average income of each gender and their bike purchase history.
-
-b) determine the relationship between distance travelled by cummuters and bike purchase.
-
-c) visualize the relationship between age bracket and bike purchase.
-
+Microsoft Excel was implored in analyzing the dataset. At the end of the analysis, we were able to look-up the basic, housing, transport, meal, leave, utility and gross salary from the simple salary structure chart into the database using VLOOKUP function.
 
 ## 4.0. Methodology
 
 ### 4.1. Data preprocessing
 
-The dataset was imported into Google Drive then into Google Colab. The different libraries were also imported (Numpy, pandas, Matplotlib and Seaborn). The dataset was called 'file'.
-
-#### Some of the steps taken in cleaning of the dataset includes:
-
-a) removing of duplicates (file.drop_duplicates (inplace = True)
-
-b) replacing 'M' and 'S' in the Marital Status column of the dataset with 'Married' and 'Single' respectively 
-
-```Python
-file['Marital Status']=file['Marital Status'].replace(['M','S'],['Married','Single'])
-```
-
-c) replacing 'M' and 'F' in the Gender column with 'Male' and 'Female' respectively 
-
-```Python
-file['Gender']=file['Gender'].replace(['M','F'],['Male','Female']).
-```
-
-d) grouping 'Age' into different age brackets.
-
-```Python
-def age_grouping(age):
-    if age<=30:
-        return 'Adolescent'
-    elif age<=54:
-        return 'Middle Age'
-    else:
-        return 'old'
-    
-file['Age Bracket']=file['Age'].apply(age_grouping)
-```
-
-### 4.2. Assumptions:
-The males purchased more bike more than the female gender due to the fact they earned more than the females.
-
+The dataset was not preprocessed because it came as cleaned data.
 
 ## 5.0. Analysis
 
