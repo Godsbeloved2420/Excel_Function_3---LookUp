@@ -48,40 +48,27 @@ The dataset was not preprocessed because it came as cleaned data.
 ```
 Where the look-up value is the grade level, the table array is the simple salary structure table, the column index number is the column number of the particular column to look-up from, and the range shows whether the exact match is needed for the look-up or approximate match where zero(0) represents Exact match and one(1) represents approximate match.
 
-#### Relationship between distance travelled by cummuters and bike purchase
-
-![picture 2](https://github.com/user-attachments/assets/f1ca7034-3c1a-40a3-a4ef-2cdcf42e2b35)
-
-#### Relationship between age bracket and bike purchase
-	          
-![picture 3](https://github.com/user-attachments/assets/82d0f979-dfba-4d93-9911-257640dca2e3)
-
+The table array cells was locked so as to enable flash-filling to take effect for each of the level and salary without encountering an error.
                         
 ### 5.2. Interpretation/key findings: 
 
 From the result, it can be seen:
 
-•	The male customers earned more than the females and therefore purchased more bike than the females.
+•	The Director has the highest gross salary more than any other employee of other grades.
 
-•	the company had more patronise from customers who travel 0-1 miles compared to others. The lowest patronise came from that travelled distances more than 10 miles.
-
-•	the middle-aged customers purchased bike the most compared to the adolescents and the old customers.
-
-•	
+•	The different salaries: basic, housing, transport, meal, leave, utility and gross salary for each of the employee was gotten from the salary structure chart using VLookup function
 
 ## 6.0. Conclusion
 
 ### 6.1. Summary of finding:
 
-•	TThe dataset contained data collected by a Bike company that deals on bike. The different fields contain different socio-demographic and bike purchase history of the customers.
+•	The dataset is made up two datasets: the organizational Database which is the Salary Compensation Schedule as at 1st January 2020 and the Simple Salary Structure. 
 
-•	The dataset had 26 duplicates which was dropped from the dataset.
+•	The analysis is aimed at looking up the different salary structure for each employee in the company based on their grade and to get the gross payment for each of the employee.
 
-•	The male customers earned more than the females and therefore purchased more bike than the females.
+•	VLOOKUP formula was implored in the analysis.
 
-•	the company had more patronise from customers who travel 0-1 miles compared to others. The lowest patronise came from that travelled distances more than 10 miles.
-
-•	the middle-aged customers purchased bike the most compared to the adolescents and the old customers.
+•	The Director has the highest gross salary more than any other employee of other grades.
 
 
 ## 7.0. Acknowledgement
