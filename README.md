@@ -35,13 +35,18 @@ Microsoft Excel was implored in analyzing the dataset. At the end of the analysi
 
 The dataset was not preprocessed because it came as cleaned data.
 
+
 ## 5.0. Analysis
 
 ### 5.1. Results
 
-#### Relationship between average income of each gender and their bike purchase history
+#### To look-up the Basic salary from the salary structured chart for each of the level, the following formula was used.
 
-![picture 1](https://github.com/user-attachments/assets/e9f0837a-1c99-45c2-a314-d651effb82ff)
+```Excel
+=VLOOKUP(E9,'Simple Salary Structure'!$B$8:$I$16,2,0)
+
+```
+Where the look-up value is the grade level, the table array is the simple salary structure table, the column index number is the column number of the particular column to look-up from, and the range shows whether the exact match is needed for the look-up or approximate match where zero(0) represents Exact match and one(1) represents approximate match.
 
 #### Relationship between distance travelled by cummuters and bike purchase
 
