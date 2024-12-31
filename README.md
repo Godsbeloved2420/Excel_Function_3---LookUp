@@ -91,5 +91,5 @@ From the result, it can be seen:
 
 ## 7.0. Acknowledgement
 
-I acknowledge LITA for this great platform for learning. I want to sincerely appreciate Mr. Joseph Elijah for providing the dataset that was used for this analysis. Google Colab was employed in this analysis.
+I acknowledge PSP ANALYTICS for this great platform for learning. I want to sincerely appreciate Mr. Joseph Elijah for providing the dataset that was used for this analysis. Google Colab was employed in this analysis.
 
